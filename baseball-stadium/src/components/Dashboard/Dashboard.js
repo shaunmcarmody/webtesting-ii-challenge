@@ -1,28 +1,46 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const Board = styled.div`
+  display: flex;
+  justify-content: space-between;
+  max-width: 300px;
+  margin: auto;
+  margin-top: 20px;
+`
+
+const Button = styled.button`
+  border-radius: 10px;
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  padding: 5px 0;
+  width: 70px;
+`
 
 const Dashboard = props => (
-  <div>
-    <button
-      onClick={props.strike}
-    >
-      Strike
-    </button>
-    <button
+  <Board>
+    <Button
       onClick={props.ball}
     >
       Ball
-    </button>
-    <button
+    </Button>
+    <Button
+      onClick={props.strike}
+    >
+      Strike
+    </Button>
+    <Button
       onClick={props.foul}
     >
       Foul
-    </button>
-    <button
+    </Button>
+    <Button
       onClick={props.hit}
     >
       Hit
-    </button>
-  </div>
+    </Button>
+  </Board>
 )
 
 export default Dashboard;

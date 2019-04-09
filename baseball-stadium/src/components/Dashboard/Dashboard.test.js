@@ -8,4 +8,12 @@ describe('<Dashboard />', () => {
     render(<Dashboard />);
   });
 
+  it('displays buttons correctly', () => {
+    const { queryByText } = render(<Dashboard />);
+    expect(queryByText(/Ball/i)).not.toBeNull();
+    expect(queryByText(/Strike/i)).not.toBeNull();
+    expect(queryByText(/Foul/i)).not.toBeNull();
+    expect(queryByText(/Hit/i)).not.toBeNull();
+  });
+
 });

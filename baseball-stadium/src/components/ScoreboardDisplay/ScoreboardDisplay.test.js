@@ -8,4 +8,10 @@ describe('<Dashboard />', () => {
     render(<ScoreboardDisplay />);
   });
 
+  it('displays titles', () => {
+    const { queryByText } = render(<ScoreboardDisplay />);
+    expect(queryByText(/Balls/i)).not.toBeNull();
+    expect(queryByText(/Strikes/i)).not.toBeNull();
+  });
+
 });

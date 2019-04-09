@@ -23,7 +23,7 @@ const Title = styled.h1`
 
 const Number = styled.h1`
   color: white;
-  font-size: 100px;
+  font-size: 10px;
   text-align: center;
 `
 
@@ -31,11 +31,11 @@ const ScoreboardDisplay = props => (
   <Display>
     <Score>
       <Title>Balls</Title>
-      <Number>{props.balls}</Number>
+      <Number>Balls:{props.balls}</Number>
     </Score>
     <Score>
       <Title>Strikes</Title>
-      <Number>{props.strikes}</Number>
+      <Number>Strikes:{props.strikes}</Number>
     </Score>
   </Display>
 )

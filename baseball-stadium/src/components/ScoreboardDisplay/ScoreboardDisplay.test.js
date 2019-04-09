@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { render, fireEvent } from 'react-testing-library';
 import ScoreboardDisplay from './ScoreboardDisplay';
 
-describe('<Dashboard />', () => {
+describe('<ScoreboardDisplay />', () => {
   it('renders successfully', () => {
     render(<ScoreboardDisplay />);
   });

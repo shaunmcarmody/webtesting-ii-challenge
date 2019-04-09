@@ -5,8 +5,8 @@ import './App.css';
 
 class App extends Component {
   state = {
-    balls: 0,
-    strikes: 0
+    balls: 1,
+    strikes: 1
   }
   render() {
     return (
@@ -64,8 +64,8 @@ class App extends Component {
   reset = () => {
     // reset balls and strikes to zero
     this.setState({
-      balls: 0,
-      strikes: 0
+      balls: 1,
+      strikes: 1
     });
   }
 }
